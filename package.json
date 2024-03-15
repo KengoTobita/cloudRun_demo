@@ -2,14 +2,15 @@
   "name": "cloud_run_startup",
   "version": "1.0.0",
   "description": "",
+  "license": "ISC",
+  "author": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
-  "license": "ISC",
   "dependencies": {
     "express": "^4.18.3",
+    "sort-package-json": "^2.8.0",
     "typescript": "^5.4.2"
   },
   "devDependencies": {

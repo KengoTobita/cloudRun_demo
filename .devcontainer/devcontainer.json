@@ -1,7 +1,7 @@
 {
 	"name": "Docker from Docker Compose",
     "image": "mcr.microsoft.com/devcontainers/typescript-node:1-20-bullseye",
-	"workspaceFolder": "/workspaces/${localWorkspaceFolderBasename}",
+	"workspaceFolder": "/workspace",
 
 	"features": {
 		"ghcr.io/devcontainers/features/docker-outside-of-docker:1": {
@@ -13,8 +13,7 @@
 	"customizations": {
 		"vscode": {
 			"extensions": [
-				"GitHub.copilot",
-				"poeticAndroid.vscode-poetry"
+				"GitHub.copilot"
 			]
 		}
 	},

@@ -1,14 +1,14 @@
 # ビルドステージ
-FROM node:16 as builder
+FROM node:20 as builder
 
 # 作業ディレクトリを設定
 WORKDIR /app
 
 # package.json と package-lock.json をコピー
-COPY package*.json ./
+COPY package*.json ./ 
 
 # 依存関係をインストール
-RUN npm install
+RUN npm install --production
 
 # アプリケーションのソースコードをコピー
 COPY . .
@@ -17,7 +17,7 @@ COPY . .
 RUN npx tsc
 
 # 実行ステージ
-FROM gcr.io/distroless/nodejs:16
+FROM gcr.io/distroless/nodejs:16 as production
 
 # 作業ディレクトリを設定
 WORKDIR /app
