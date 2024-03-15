@@ -1,0 +1,24 @@
+{
+	"name": "Docker from Docker Compose",
+    "image": "mcr.microsoft.com/devcontainers/typescript-node:1-20-bullseye",
+	"workspaceFolder": "/workspaces/${localWorkspaceFolderBasename}",
+
+	"features": {
+		"ghcr.io/devcontainers/features/docker-outside-of-docker:1": {
+			"version": "latest",
+			"enableNonRootDocker": "true",
+			"moby": "true"
+		}
+	},
+	"customizations": {
+		"vscode": {
+			"extensions": [
+				"GitHub.copilot",
+				"poeticAndroid.vscode-poetry"
+			]
+		}
+	},
+	"mounts": [
+		"source=${localWorkspaceFolder},target=/workspace,type=bind,consistency=cached"
+	]
+}
