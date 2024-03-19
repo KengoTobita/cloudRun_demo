@@ -15,7 +15,6 @@ COPY . .
 
 # TypeScript のコンパイル
 RUN npx tsc
-
 # 実行ステージ
 FROM gcr.io/distroless/nodejs:16 as production
 

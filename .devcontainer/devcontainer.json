@@ -1,5 +1,5 @@
 {
-	"name": "Docker from Docker Compose",
+	"name": "Cloud Run demo",
     "image": "mcr.microsoft.com/devcontainers/typescript-node:1-20-bullseye",
 	"workspaceFolder": "/workspace",
 
